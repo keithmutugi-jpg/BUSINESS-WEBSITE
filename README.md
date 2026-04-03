@@ -1,5 +1,3 @@
-# 🌐 Keith's Business Website
-
 A modern, responsive portfolio website built using HTML and Tailwind CSS.
 
 ## 🚀 Live Demo
