@@ -47,11 +47,12 @@ You can also publish it with GitHub Pages:
 
 Before publishing, update these details in `index.html`:
 
-- WhatsApp number if needed
+- Phone number if needed
 - Project names and descriptions
 - GitHub profile link
 
 ## Contact
 
 - GitHub: https://github.com/keithmutugi-jpg
+- Phone: 0110504044
 - WhatsApp: https://wa.me/254110504044
