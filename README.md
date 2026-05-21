@@ -1,36 +1,57 @@
-A modern, responsive portfolio website built using HTML and Tailwind CSS.
+# Keith Mutugi Portfolio
 
-## 🚀 Live Demo
-👉 https://keithmutugi-jpg.github.io/BUSINESS-WEBSITE/
+A clean personal portfolio website built with HTML and Tailwind CSS.
 
-## 📌 About the Project
-This is a personal portfolio website designed to showcase my web development skills and services.
+## Overview
 
-It includes:
-- Clean and modern UI
-- Responsive design (mobile-friendly)
-- Services section
-- Projects showcase
-- Contact via WhatsApp
+This project presents my web development skills, selected project ideas, GitHub profile, and contact information in a bright one-page layout. It is designed to work well on desktop and mobile screens.
 
-## 🛠️ Built With
+## Features
+
+- Responsive navigation and layout
+- Clean hero section with personal introduction
+- About section
+- Skills section
+- GitHub-ready project showcase cards
+- WhatsApp and GitHub links
+- Hover effects, project previews, and responsive styling
+
+## Built With
+
 - HTML5
 - Tailwind CSS
+- Google Fonts
 
-## 💼 Services Offered
-- Website Design
-- Frontend Development
-- Website Fixes and Optimization
+## Project Structure
 
-## 📞 Contact Me
-Want a website for your business?
+```text
+.
+├── index.html
+├── README.md
+└── .gitignore
+```
 
-👉 WhatsApp: https://wa.me/2547110504044
+## How To View
 
-## 📷 Screenshot
-(Add a screenshot of your website here later)
+Open `index.html` in a browser.
 
-## 📌 How to Use
-1. Clone the repository:
-```bash
-git clone https://github.com/keithmutugi-jpg/BUSINESS-WEBSITE.git
+You can also publish it with GitHub Pages:
+
+1. Push the project to a GitHub repository.
+2. Open the repository settings.
+3. Go to **Pages**.
+4. Set the source to the main branch.
+5. Save and open the generated GitHub Pages link.
+
+## Customization
+
+Before publishing, update these details in `index.html`:
+
+- WhatsApp number if needed
+- Project names and descriptions
+- GitHub profile link
+
+## Contact
+
+- GitHub: https://github.com/keithmutugi-jpg
+- WhatsApp: https://wa.me/254110504044
