@@ -3,16 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Keith Mutugi | Web Developer Portfolio</title>
+  <title>Keith Mutugi | Web Developer</title>
   <meta
     name="description"
-    content="Portfolio website for Keith Mutugi, a frontend web developer building responsive websites with HTML, CSS, JavaScript, and Tailwind CSS."
+    content="Keith Mutugi is a web developer building responsive websites with HTML, CSS, JavaScript, and Tailwind CSS."
   >
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Syne:wght@600;700;800&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@500;600;700&display=swap"
     rel="stylesheet"
   >
   <script>
@@ -20,21 +20,20 @@
       theme: {
         extend: {
           colors: {
-            ink: "#07111f",
-            navy: "#0d1728",
-            lime: "#9cff6e",
-            mint: "#48f0b2",
-            amber: "#ffcf5a",
-            coral: "#ff7d66",
-            sky: "#7dd3fc",
-            paper: "#e6edf7"
+            ink: "#111827",
+            cloud: "#f6f8fb",
+            line: "#d9e2ef",
+            blue: "#2563eb",
+            green: "#16a34a",
+            orange: "#f97316",
+            violet: "#7c3aed"
           },
           fontFamily: {
-            display: ["Syne", "sans-serif"],
-            body: ["Manrope", "sans-serif"]
+            display: ["Space Grotesk", "sans-serif"],
+            body: ["Inter", "sans-serif"]
           },
           boxShadow: {
-            lift: "0 24px 70px rgba(0, 0, 0, 0.38)"
+            clean: "0 18px 45px rgba(17, 24, 39, 0.10)"
           }
         }
       }
@@ -46,350 +45,267 @@
     }
 
     body {
-      font-family: "Manrope", sans-serif;
+      font-family: "Inter", sans-serif;
       background:
-        linear-gradient(115deg, rgba(72, 240, 178, 0.12), transparent 28%),
-        linear-gradient(245deg, rgba(255, 207, 90, 0.12), transparent 30%),
-        linear-gradient(160deg, #07111f 0%, #0d1728 52%, #111827 100%);
+        linear-gradient(rgba(37, 99, 235, 0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(37, 99, 235, 0.05) 1px, transparent 1px),
+        #f6f8fb;
+      background-size: 36px 36px;
+      color: #111827;
     }
 
-    .page-grid {
+    .project-preview {
       background-image:
-        linear-gradient(rgba(230, 237, 247, 0.06) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(230, 237, 247, 0.06) 1px, transparent 1px);
-      background-size: 44px 44px;
-    }
-
-    .glass {
-      background: rgba(255, 255, 255, 0.065);
-      border: 1px solid rgba(255, 255, 255, 0.11);
-      backdrop-filter: blur(18px);
-    }
-
-    .shine {
-      position: relative;
-      overflow: hidden;
-    }
-
-    .shine::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(110deg, transparent 0%, rgba(255, 255, 255, 0.16) 45%, transparent 70%);
-      transform: translateX(-120%);
-      transition: transform 0.7s ease;
-    }
-
-    .shine:hover::before {
-      transform: translateX(120%);
-    }
-
-    .float {
-      animation: float 5s ease-in-out infinite;
-    }
-
-    .typing {
-      border-right: 2px solid #9cff6e;
-      animation: caret 0.9s steps(1) infinite;
-    }
-
-    @keyframes float {
-      0%, 100% {
-        transform: translateY(0);
-      }
-      50% {
-        transform: translateY(-12px);
-      }
-    }
-
-    @keyframes caret {
-      50% {
-        border-color: transparent;
-      }
+        linear-gradient(rgba(255, 255, 255, 0.45) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.45) 1px, transparent 1px);
+      background-size: 24px 24px;
     }
   </style>
 </head>
-<body class="page-grid text-white">
-  <div class="min-h-screen">
-    <header class="sticky top-0 z-50 border-b border-white/10 bg-ink/85 backdrop-blur-xl">
-      <nav class="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 lg:px-10">
-        <a href="#" class="font-display text-xl font-extrabold tracking-wide">
-          Keith<span class="text-mint">.dev</span>
-        </a>
-        <div class="hidden items-center gap-7 text-sm font-bold text-paper/75 md:flex">
-          <a href="#about" class="transition hover:text-mint">About</a>
-          <a href="#skills" class="transition hover:text-mint">Skills</a>
-          <a href="#projects" class="transition hover:text-mint">Projects</a>
-          <a href="#contact" class="transition hover:text-mint">Contact</a>
+<body>
+  <header class="sticky top-0 z-50 border-b border-line/80 bg-cloud/90 backdrop-blur">
+    <nav class="mx-auto flex max-w-6xl items-center justify-between px-5 py-4 lg:px-8">
+      <a href="#" class="font-display text-xl font-bold tracking-tight">Keith Mutugi</a>
+      <div class="hidden items-center gap-7 text-sm font-bold text-slate-600 md:flex">
+        <a href="#about" class="hover:text-blue">About</a>
+        <a href="#skills" class="hover:text-blue">Skills</a>
+        <a href="#projects" class="hover:text-blue">Projects</a>
+        <a href="#contact" class="hover:text-blue">Contact</a>
+      </div>
+      <a
+        href="https://github.com/keithmutugi-jpg"
+        class="rounded-full bg-ink px-5 py-3 text-sm font-bold text-white transition hover:-translate-y-0.5 hover:bg-blue"
+      >
+        GitHub
+      </a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="mx-auto grid max-w-6xl items-center gap-12 px-5 py-16 lg:grid-cols-[1.1fr_0.9fr] lg:px-8 lg:py-24">
+      <div>
+        <p class="inline-flex rounded-full border border-blue/20 bg-white px-4 py-2 text-sm font-bold text-blue shadow-sm">
+          Frontend Web Developer
+        </p>
+        <h1 class="mt-7 max-w-3xl font-display text-5xl font-bold leading-tight tracking-tight text-ink md:text-7xl">
+          I build simple, clean websites that look good on every screen.
+        </h1>
+        <p class="mt-6 max-w-2xl text-lg leading-8 text-slate-600">
+          Hi, I am Keith. I create responsive web pages using HTML, CSS, JavaScript, and Tailwind CSS. This portfolio shows my skills, style, and projects as I continue growing as a developer.
+        </p>
+        <div class="mt-9 flex flex-col gap-4 sm:flex-row">
+          <a
+            href="#projects"
+            class="rounded-full bg-blue px-7 py-4 text-center text-sm font-extrabold uppercase tracking-[0.14em] text-white shadow-clean transition hover:-translate-y-1 hover:bg-ink"
+          >
+            View Work
+          </a>
+          <a
+            href="https://wa.me/254110504044"
+            class="rounded-full border border-line bg-white px-7 py-4 text-center text-sm font-extrabold uppercase tracking-[0.14em] text-ink transition hover:-translate-y-1 hover:border-blue hover:text-blue"
+          >
+            Contact Me
+          </a>
         </div>
-        <a
-          href="https://github.com/keithmutugi-jpg"
-          class="rounded-full border border-mint/40 bg-mint/10 px-5 py-3 text-sm font-extrabold text-mint transition hover:-translate-y-0.5 hover:bg-mint hover:text-ink"
+      </div>
+
+      <div class="rounded-[2rem] border border-line bg-white p-4 shadow-clean">
+        <img
+          src="https://github.com/keithmutugi-jpg.png"
+          alt="Keith Mutugi profile"
+          class="aspect-square w-full rounded-[1.5rem] object-cover"
         >
-          GitHub
-        </a>
-      </nav>
-    </header>
+        <div class="p-5">
+          <div class="flex flex-wrap gap-2">
+            <span class="rounded-full bg-blue/10 px-3 py-1 text-xs font-bold text-blue">HTML</span>
+            <span class="rounded-full bg-green/10 px-3 py-1 text-xs font-bold text-green">CSS</span>
+            <span class="rounded-full bg-orange/10 px-3 py-1 text-xs font-bold text-orange">JavaScript</span>
+            <span class="rounded-full bg-violet/10 px-3 py-1 text-xs font-bold text-violet">Tailwind</span>
+          </div>
+          <h2 class="mt-5 font-display text-3xl font-bold text-ink">Building my developer profile one project at a time.</h2>
+          <p class="mt-3 leading-7 text-slate-600">
+            I care about neat layouts, readable code, mobile design, and websites that are easy for people to understand.
+          </p>
+        </div>
+      </div>
+    </section>
 
-    <main>
-      <section class="mx-auto grid max-w-7xl items-center gap-12 px-5 pb-20 pt-16 lg:grid-cols-[1.05fr_0.95fr] lg:px-10 lg:pb-28 lg:pt-24">
+    <section class="mx-auto max-w-6xl px-5 pb-10 lg:px-8">
+      <div class="grid gap-4 rounded-[1.5rem] border border-line bg-white p-5 shadow-clean md:grid-cols-3">
+        <div class="rounded-2xl bg-cloud p-5">
+          <p class="font-display text-4xl font-bold text-blue">01</p>
+          <p class="mt-2 font-bold text-ink">Portfolio Website</p>
+          <p class="mt-2 text-sm leading-6 text-slate-600">A complete page ready for GitHub Pages.</p>
+        </div>
+        <div class="rounded-2xl bg-cloud p-5">
+          <p class="font-display text-4xl font-bold text-green">04</p>
+          <p class="mt-2 font-bold text-ink">Main Skills</p>
+          <p class="mt-2 text-sm leading-6 text-slate-600">HTML, CSS, JavaScript, and Tailwind CSS.</p>
+        </div>
+        <div class="rounded-2xl bg-cloud p-5">
+          <p class="font-display text-4xl font-bold text-orange">Mobile</p>
+          <p class="mt-2 font-bold text-ink">Responsive Design</p>
+          <p class="mt-2 text-sm leading-6 text-slate-600">Built to look good on phones and computers.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="mx-auto max-w-6xl px-5 py-16 lg:px-8">
+      <div class="grid gap-8 md:grid-cols-[0.8fr_1.2fr]">
         <div>
-          <p class="inline-flex rounded-full border border-sky/25 bg-sky/10 px-4 py-2 text-sm font-extrabold text-sky">
-            Frontend developer building clean web experiences
+          <p class="text-sm font-extrabold uppercase tracking-[0.2em] text-blue">About Me</p>
+          <h2 class="mt-3 font-display text-4xl font-bold tracking-tight text-ink">A focused learner who enjoys making websites better.</h2>
+        </div>
+        <div class="space-y-5 text-lg leading-8 text-slate-600">
+          <p>
+            I am developing my skills by building real web pages and improving each project step by step. I like clean sections, balanced spacing, clear text, and designs that feel professional without being complicated.
           </p>
-          <h1 class="mt-7 max-w-4xl font-display text-5xl font-extrabold leading-tight md:text-7xl">
-            Hi, I am Keith. I turn ideas into websites people can actually enjoy using.
-          </h1>
-          <p class="mt-6 max-w-2xl text-lg leading-8 text-paper/80">
-            I design and build responsive pages with HTML, CSS, JavaScript, and Tailwind CSS. This portfolio is my online space for projects, learning, and freelance-ready web work.
+          <p>
+            My current goal is to become better at frontend development and build a GitHub profile that shows steady progress, useful projects, and a strong eye for design.
           </p>
-          <div class="mt-9 flex flex-col gap-4 sm:flex-row">
-            <a
-              href="#projects"
-              class="shine rounded-full bg-lime px-7 py-4 text-center text-sm font-extrabold uppercase tracking-[0.16em] text-ink transition hover:-translate-y-1"
-            >
-              See My Work
-            </a>
-            <a
-              href="https://wa.me/254110504044"
-              class="rounded-full border border-white/15 bg-white/5 px-7 py-4 text-center text-sm font-bold uppercase tracking-[0.16em] text-white transition hover:border-amber hover:text-amber"
-            >
-              WhatsApp Me
-            </a>
-          </div>
-
-          <div class="mt-12 grid gap-4 sm:grid-cols-3">
-            <div class="glass rounded-2xl p-5">
-              <p class="font-display text-3xl font-extrabold text-amber">01</p>
-              <p class="mt-2 text-sm font-semibold text-paper/75">Portfolio website</p>
-            </div>
-            <div class="glass rounded-2xl p-5">
-              <p class="font-display text-3xl font-extrabold text-mint">04</p>
-              <p class="mt-2 text-sm font-semibold text-paper/75">Core web skills</p>
-            </div>
-            <div class="glass rounded-2xl p-5">
-              <p class="font-display text-3xl font-extrabold text-sky">100%</p>
-              <p class="mt-2 text-sm font-semibold text-paper/75">Responsive mindset</p>
-            </div>
-          </div>
         </div>
+      </div>
+    </section>
 
-        <div class="relative">
-          <div class="float glass rounded-[2rem] p-4 shadow-lift">
-            <div class="overflow-hidden rounded-[1.5rem] bg-[#0b1020]">
-              <div class="flex items-center gap-2 border-b border-white/10 px-5 py-4">
-                <span class="h-3 w-3 rounded-full bg-coral"></span>
-                <span class="h-3 w-3 rounded-full bg-amber"></span>
-                <span class="h-3 w-3 rounded-full bg-mint"></span>
-                <p class="ml-3 text-xs font-bold uppercase tracking-[0.25em] text-paper/45">portfolio.html</p>
-              </div>
-              <div class="grid gap-6 p-6 md:grid-cols-[0.75fr_1.25fr]">
-                <img
-                  src="https://github.com/keithmutugi-jpg.png"
-                  alt="Keith Mutugi profile"
-                  class="aspect-square w-full rounded-2xl object-cover"
-                >
-                <div class="flex flex-col justify-between">
-                  <div>
-                    <p class="font-mono text-sm text-mint">const developer = {</p>
-                    <p class="mt-3 font-mono text-sm leading-7 text-paper/80">
-                      name: "Keith Mutugi",<br>
-                      role: "Frontend Developer",<br>
-                      focus: "Responsive Websites",<br>
-                      location: "Kenya"
-                    </p>
-                    <p class="mt-3 font-mono text-sm text-mint">}</p>
-                  </div>
-                  <p class="mt-7 font-mono text-sm text-lime">
-                    <span class="typing">npm run build-portfolio</span>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="about" class="mx-auto max-w-7xl px-5 py-16 lg:px-10">
-        <div class="grid gap-6 lg:grid-cols-[0.8fr_1.2fr]">
-          <div class="glass rounded-[1.5rem] p-8">
-            <p class="text-sm font-extrabold uppercase tracking-[0.25em] text-sky">About Me</p>
-            <h2 class="mt-4 font-display text-4xl font-bold">I am learning by building, improving, and sharing.</h2>
-          </div>
-          <div class="glass rounded-[1.5rem] p-8 text-paper/80">
-            <p class="leading-8">
-              I am growing as a web developer through practical projects. I enjoy creating pages that are visually strong, simple to navigate, and clear on both phone and desktop screens.
-            </p>
-            <p class="mt-5 leading-8">
-              My current focus is frontend development: clean layouts, responsive design, readable code, and better user experience. Every project helps me sharpen my eye and improve my problem solving.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section id="skills" class="mx-auto max-w-7xl px-5 py-16 lg:px-10">
+    <section id="skills" class="border-y border-line bg-white">
+      <div class="mx-auto max-w-6xl px-5 py-16 lg:px-8">
         <div class="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
           <div>
-            <p class="text-sm font-extrabold uppercase tracking-[0.25em] text-sky">Skill Stack</p>
-            <h2 class="mt-3 font-display text-4xl font-bold">What I use to build websites</h2>
+            <p class="text-sm font-extrabold uppercase tracking-[0.2em] text-blue">Skills</p>
+            <h2 class="mt-3 font-display text-4xl font-bold tracking-tight text-ink">What I can work with</h2>
           </div>
-          <p class="max-w-xl text-paper/75">
-            These are the tools I am using now, with more being added as I keep building.
+          <p class="max-w-xl leading-7 text-slate-600">
+            These are the main tools I use for building responsive portfolio pages, landing pages, and simple web interfaces.
           </p>
         </div>
 
         <div class="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-          <article class="glass shine rounded-[1.25rem] p-6 transition hover:-translate-y-2">
-            <p class="font-mono text-xs font-bold uppercase tracking-[0.25em] text-mint">Structure</p>
-            <h3 class="mt-4 font-display text-3xl font-bold text-amber">HTML5</h3>
-            <p class="mt-4 text-sm leading-6 text-paper/75">Semantic sections, accessible content, and clean page foundations.</p>
+          <article class="rounded-[1.25rem] border border-line bg-cloud p-6 transition hover:-translate-y-2 hover:shadow-clean">
+            <p class="text-sm font-extrabold uppercase tracking-[0.18em] text-blue">Structure</p>
+            <h3 class="mt-4 font-display text-3xl font-bold">HTML</h3>
+            <p class="mt-3 leading-7 text-slate-600">Clean page sections and meaningful content structure.</p>
           </article>
-          <article class="glass shine rounded-[1.25rem] p-6 transition hover:-translate-y-2">
-            <p class="font-mono text-xs font-bold uppercase tracking-[0.25em] text-mint">Style</p>
-            <h3 class="mt-4 font-display text-3xl font-bold text-amber">CSS3</h3>
-            <p class="mt-4 text-sm leading-6 text-paper/75">Layouts, spacing, animations, color systems, and responsive polish.</p>
+          <article class="rounded-[1.25rem] border border-line bg-cloud p-6 transition hover:-translate-y-2 hover:shadow-clean">
+            <p class="text-sm font-extrabold uppercase tracking-[0.18em] text-green">Design</p>
+            <h3 class="mt-4 font-display text-3xl font-bold">CSS</h3>
+            <p class="mt-3 leading-7 text-slate-600">Responsive layouts, colors, spacing, and visual polish.</p>
           </article>
-          <article class="glass shine rounded-[1.25rem] p-6 transition hover:-translate-y-2">
-            <p class="font-mono text-xs font-bold uppercase tracking-[0.25em] text-mint">Logic</p>
-            <h3 class="mt-4 font-display text-3xl font-bold text-amber">JavaScript</h3>
-            <p class="mt-4 text-sm leading-6 text-paper/75">Interactive behavior, dynamic UI ideas, and better user flow.</p>
+          <article class="rounded-[1.25rem] border border-line bg-cloud p-6 transition hover:-translate-y-2 hover:shadow-clean">
+            <p class="text-sm font-extrabold uppercase tracking-[0.18em] text-orange">Logic</p>
+            <h3 class="mt-4 font-display text-3xl font-bold">JavaScript</h3>
+            <p class="mt-3 leading-7 text-slate-600">Small interactive features and dynamic page behavior.</p>
           </article>
-          <article class="glass shine rounded-[1.25rem] p-6 transition hover:-translate-y-2">
-            <p class="font-mono text-xs font-bold uppercase tracking-[0.25em] text-mint">UI</p>
-            <h3 class="mt-4 font-display text-3xl font-bold text-amber">Tailwind</h3>
-            <p class="mt-4 text-sm leading-6 text-paper/75">Fast interface building with consistent spacing and utility classes.</p>
+          <article class="rounded-[1.25rem] border border-line bg-cloud p-6 transition hover:-translate-y-2 hover:shadow-clean">
+            <p class="text-sm font-extrabold uppercase tracking-[0.18em] text-violet">UI</p>
+            <h3 class="mt-4 font-display text-3xl font-bold">Tailwind</h3>
+            <p class="mt-3 leading-7 text-slate-600">Fast styling with clean utility classes and modern UI patterns.</p>
           </article>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section id="projects" class="mx-auto max-w-7xl px-5 py-16 lg:px-10">
-        <div class="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
-          <div>
-            <p class="text-sm font-extrabold uppercase tracking-[0.25em] text-sky">Featured Projects</p>
-            <h2 class="mt-3 font-display text-4xl font-bold">Project cards ready for GitHub visitors</h2>
+    <section id="projects" class="mx-auto max-w-6xl px-5 py-16 lg:px-8">
+      <div class="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+        <div>
+          <p class="text-sm font-extrabold uppercase tracking-[0.2em] text-blue">Projects</p>
+          <h2 class="mt-3 font-display text-4xl font-bold tracking-tight text-ink">Work I can show on GitHub</h2>
+        </div>
+        <p class="max-w-xl leading-7 text-slate-600">
+          These project cards can later be connected to real repository links as you add more work.
+        </p>
+      </div>
+
+      <div class="mt-10 grid gap-6 lg:grid-cols-3">
+        <article class="overflow-hidden rounded-[1.5rem] border border-line bg-white shadow-clean transition hover:-translate-y-2">
+          <div class="project-preview bg-blue p-5">
+            <div class="rounded-2xl bg-white p-5">
+              <div class="h-4 w-32 rounded-full bg-blue/20"></div>
+              <div class="mt-6 h-24 rounded-xl bg-blue/15"></div>
+              <div class="mt-4 grid grid-cols-3 gap-3">
+                <span class="h-12 rounded-xl bg-blue/15"></span>
+                <span class="h-12 rounded-xl bg-blue/15"></span>
+                <span class="h-12 rounded-xl bg-blue/15"></span>
+              </div>
+            </div>
           </div>
-          <p class="max-w-xl text-paper/75">
-            Replace the demo links with your real repositories as you add more work to your GitHub account.
-          </p>
-        </div>
-
-        <div class="mt-10 grid gap-6 lg:grid-cols-3">
-          <article class="glass overflow-hidden rounded-[1.5rem] transition hover:-translate-y-2">
-            <div class="bg-[linear-gradient(135deg,#48f0b2_0%,#7dd3fc_52%,#0d1728_100%)] p-5">
-              <div class="rounded-2xl border border-white/25 bg-ink/70 p-5">
-                <div class="h-3 w-32 rounded-full bg-white/70"></div>
-                <div class="mt-6 h-20 rounded-xl bg-white/20"></div>
-                <div class="mt-4 grid grid-cols-3 gap-3">
-                  <span class="h-10 rounded-lg bg-white/20"></span>
-                  <span class="h-10 rounded-lg bg-white/20"></span>
-                  <span class="h-10 rounded-lg bg-white/20"></span>
-                </div>
-              </div>
-            </div>
-            <div class="p-6">
-              <p class="text-sm font-extrabold uppercase tracking-[0.22em] text-mint">Portfolio</p>
-              <h3 class="mt-3 font-display text-2xl font-bold">Personal developer portfolio</h3>
-              <p class="mt-4 leading-7 text-paper/75">
-                A polished one-page site showing my profile, skills, projects, and contact links.
-              </p>
-              <a href="https://github.com/keithmutugi-jpg" class="mt-5 inline-flex font-bold text-amber hover:text-lime">
-                View on GitHub
-              </a>
-            </div>
-          </article>
-
-          <article class="glass overflow-hidden rounded-[1.5rem] transition hover:-translate-y-2">
-            <div class="bg-[linear-gradient(135deg,#ffcf5a_0%,#ff7d66_48%,#0d1728_100%)] p-5">
-              <div class="rounded-2xl border border-white/25 bg-ink/70 p-5">
-                <div class="grid grid-cols-[1.25fr_0.75fr] gap-4">
-                  <div>
-                    <div class="h-3 w-24 rounded-full bg-white/70"></div>
-                    <div class="mt-4 h-16 rounded-xl bg-white/20"></div>
-                  </div>
-                  <div class="rounded-xl bg-white/20"></div>
-                </div>
-                <div class="mt-4 h-10 w-28 rounded-full bg-amber"></div>
-              </div>
-            </div>
-            <div class="p-6">
-              <p class="text-sm font-extrabold uppercase tracking-[0.22em] text-mint">Landing Page</p>
-              <h3 class="mt-3 font-display text-2xl font-bold">Business website concept</h3>
-              <p class="mt-4 leading-7 text-paper/75">
-                A landing page idea for a business that needs strong copy, service sections, and a clear call to action.
-              </p>
-              <a href="#contact" class="mt-5 inline-flex font-bold text-amber hover:text-lime">
-                Discuss a project
-              </a>
-            </div>
-          </article>
-
-          <article class="glass overflow-hidden rounded-[1.5rem] transition hover:-translate-y-2">
-            <div class="bg-[linear-gradient(135deg,#7dd3fc_0%,#9cff6e_45%,#0d1728_100%)] p-5">
-              <div class="rounded-2xl border border-white/25 bg-ink/70 p-5">
-                <div class="grid grid-cols-7 gap-2">
-                  <span class="h-5 rounded bg-mint/30"></span>
-                  <span class="h-5 rounded bg-mint/60"></span>
-                  <span class="h-5 rounded bg-mint/20"></span>
-                  <span class="h-5 rounded bg-lime/80"></span>
-                  <span class="h-5 rounded bg-mint/40"></span>
-                  <span class="h-5 rounded bg-lime/70"></span>
-                  <span class="h-5 rounded bg-mint/25"></span>
-                  <span class="h-5 rounded bg-lime/70"></span>
-                  <span class="h-5 rounded bg-mint/35"></span>
-                  <span class="h-5 rounded bg-mint/75"></span>
-                  <span class="h-5 rounded bg-mint/25"></span>
-                  <span class="h-5 rounded bg-lime/80"></span>
-                  <span class="h-5 rounded bg-mint/30"></span>
-                  <span class="h-5 rounded bg-mint/60"></span>
-                </div>
-                <div class="mt-5 h-3 w-36 rounded-full bg-white/70"></div>
-                <div class="mt-3 h-3 w-48 rounded-full bg-white/35"></div>
-              </div>
-            </div>
-            <div class="p-6">
-              <p class="text-sm font-extrabold uppercase tracking-[0.22em] text-mint">Practice</p>
-              <h3 class="mt-3 font-display text-2xl font-bold">Responsive UI experiments</h3>
-              <p class="mt-4 leading-7 text-paper/75">
-                Small layout experiments focused on cards, grids, buttons, spacing, and mobile-friendly sections.
-              </p>
-              <a href="#skills" class="mt-5 inline-flex font-bold text-amber hover:text-lime">
-                See skills
-              </a>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <section id="contact" class="mx-auto max-w-5xl px-5 py-20 text-center lg:px-10">
-        <div class="glass rounded-[1.5rem] p-8 shadow-lift md:p-12">
-          <p class="text-sm font-extrabold uppercase tracking-[0.25em] text-sky">Contact</p>
-          <h2 class="mx-auto mt-4 max-w-3xl font-display text-4xl font-bold md:text-5xl">
-            Have an idea for a website? I can help bring it online.
-          </h2>
-          <p class="mx-auto mt-5 max-w-2xl text-lg leading-8 text-paper/80">
-            I am open to frontend practice projects, website design work, and collaborations that help me grow while creating useful web experiences.
-          </p>
-          <div class="mt-9 flex flex-col justify-center gap-4 sm:flex-row">
-            <a
-              href="https://wa.me/254110504044"
-              class="shine rounded-full bg-amber px-8 py-4 text-sm font-extrabold uppercase tracking-[0.16em] text-ink transition hover:-translate-y-1"
-            >
-              Message Me
-            </a>
-            <a
-              href="https://github.com/keithmutugi-jpg"
-              class="rounded-full border border-white/15 bg-white/5 px-8 py-4 text-sm font-bold uppercase tracking-[0.16em] text-white transition hover:border-mint hover:text-mint"
-            >
-              Visit GitHub
-            </a>
+          <div class="p-6">
+            <p class="text-sm font-extrabold uppercase tracking-[0.18em] text-blue">Portfolio</p>
+            <h3 class="mt-3 font-display text-2xl font-bold">Personal portfolio website</h3>
+            <p class="mt-4 leading-7 text-slate-600">
+              A responsive portfolio page with profile, skills, project cards, and contact links.
+            </p>
           </div>
-        </div>
-      </section>
-    </main>
+        </article>
 
-    <footer class="border-t border-white/10 px-5 py-8 text-center text-sm text-paper/60 lg:px-10">
-      <p>&copy; 2026 Keith Mutugi. Built with HTML, Tailwind CSS, and consistent practice.</p>
-    </footer>
-  </div>
+        <article class="overflow-hidden rounded-[1.5rem] border border-line bg-white shadow-clean transition hover:-translate-y-2">
+          <div class="project-preview bg-green p-5">
+            <div class="rounded-2xl bg-white p-5">
+              <div class="h-20 rounded-xl bg-green/15"></div>
+              <div class="mt-5 h-4 w-40 rounded-full bg-green/20"></div>
+              <div class="mt-3 h-4 w-52 rounded-full bg-green/15"></div>
+              <div class="mt-5 h-11 w-32 rounded-full bg-green"></div>
+            </div>
+          </div>
+          <div class="p-6">
+            <p class="text-sm font-extrabold uppercase tracking-[0.18em] text-green">Landing Page</p>
+            <h3 class="mt-3 font-display text-2xl font-bold">Business website concept</h3>
+            <p class="mt-4 leading-7 text-slate-600">
+              A clean business page idea for showing services, building trust, and encouraging contact.
+            </p>
+          </div>
+        </article>
+
+        <article class="overflow-hidden rounded-[1.5rem] border border-line bg-white shadow-clean transition hover:-translate-y-2">
+          <div class="project-preview bg-orange p-5">
+            <div class="rounded-2xl bg-white p-5">
+              <div class="grid grid-cols-2 gap-3">
+                <span class="h-24 rounded-xl bg-orange/15"></span>
+                <span class="h-24 rounded-xl bg-orange/15"></span>
+              </div>
+              <div class="mt-5 h-4 w-36 rounded-full bg-orange/20"></div>
+              <div class="mt-3 h-4 w-48 rounded-full bg-orange/15"></div>
+            </div>
+          </div>
+          <div class="p-6">
+            <p class="text-sm font-extrabold uppercase tracking-[0.18em] text-orange">Responsive UI</p>
+            <h3 class="mt-3 font-display text-2xl font-bold">Mobile layout practice</h3>
+            <p class="mt-4 leading-7 text-slate-600">
+              Practice layouts focused on cards, spacing, buttons, and clean responsive design.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="mx-auto max-w-4xl px-5 py-20 text-center lg:px-8">
+      <div class="rounded-[1.5rem] bg-ink px-6 py-12 text-white shadow-clean md:px-12">
+        <p class="text-sm font-extrabold uppercase tracking-[0.2em] text-sky-300">Contact</p>
+        <h2 class="mx-auto mt-4 max-w-2xl font-display text-4xl font-bold tracking-tight md:text-5xl">
+          Let us create a website that looks sharp and works well.
+        </h2>
+        <p class="mx-auto mt-5 max-w-2xl text-lg leading-8 text-slate-300">
+          I am open to frontend practice projects, website design work, and collaborations that help me grow as a developer.
+        </p>
+        <div class="mt-9 flex flex-col justify-center gap-4 sm:flex-row">
+          <a
+            href="https://wa.me/254110504044"
+            class="rounded-full bg-white px-8 py-4 text-sm font-extrabold uppercase tracking-[0.14em] text-ink transition hover:-translate-y-1 hover:bg-blue hover:text-white"
+          >
+            WhatsApp
+          </a>
+          <a
+            href="https://github.com/keithmutugi-jpg"
+            class="rounded-full border border-white/20 px-8 py-4 text-sm font-extrabold uppercase tracking-[0.14em] text-white transition hover:-translate-y-1 hover:border-white hover:bg-white hover:text-ink"
+          >
+            GitHub
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-line px-5 py-8 text-center text-sm font-medium text-slate-500 lg:px-8">
+    <p>&copy; 2026 Keith Mutugi. Built with HTML, Tailwind CSS, and practice.</p>
+  </footer>
 </body>
 </html>
